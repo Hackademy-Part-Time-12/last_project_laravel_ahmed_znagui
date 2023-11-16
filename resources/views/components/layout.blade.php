@@ -9,10 +9,10 @@
 </head>
 <body>
     <x-navbar />
-    <x-header />
+    
     <div class="min-vh-100">
         {{ $slot }}
     </div>
-    <h1>ciao</h1>
+    
 </body>
 </html>
