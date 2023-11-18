@@ -1,12 +1,16 @@
 <nav>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Menu</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="{{ route('recipe.create') }}">Recipe</a></li>
       <li><a href="#">Pricing</a></li>
     </ul>
 
     @auth
+
+    
+
     <ul class="ul-2 d-flex flex-column">
+      {{ Auth::user()->name }}
       <li><a href="#">Profile</a></li>
       <li><a href="#" id="btn">Logout</a>
       <form action="{{ route('logout')}}"  method="POST" id="form-logout"  >

@@ -1,13 +1,13 @@
 <x-layout>
-    <div class="container my-5">
+    <div class="container">
         <div class="row">
-           <h2>Sign In</h2>
+           <h2 class="text-center my-5">Sign In</h2>
         </div>
     </div>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-12 col-md-6">
+    <div class="container my-5 ">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 cont-logout">
                 <form action="{{ route('register') }}" method="POST">
                     @csrf
                     <div class="mb-3">
