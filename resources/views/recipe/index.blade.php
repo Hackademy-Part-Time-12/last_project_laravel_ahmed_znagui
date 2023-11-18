@@ -1,12 +1,10 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-flex justify-content-between">
-                <h2 class="display-3">Last recepies</h2>
-                <a href="{{ route('recipe.index') }}" class="">Recepies</a>
-            </div>
+           <h2 class="text-center my-5">Your Recipes</h2>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             @forelse ($recipes as $recipe)

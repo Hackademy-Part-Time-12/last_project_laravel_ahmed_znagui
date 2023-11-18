@@ -1,7 +1,7 @@
 <form class="shadow p-5" wire:submit.revent="store">
     @csrf
     @if (session('message'))
-        <div class="alert alert-message text-success text-center bg-success">
+        <div class="alert alert-success text-success text-center">
             {{ session('message') }}    
         </div>    
     @endif                  
@@ -22,6 +22,13 @@
             <p class="text-danger">{{ $message }}</p>
         @enderror
     </div>
+
+    @if ($image)
+        <div class="mb-3">
+            <label for="">preview</label>
+            <img src="{{ $image->temporaryUrl() }}" alt="" class="img-fluid w-25 rounded-3">
+        </div>
+    @endif
 
     <div class="mb-3">
         <label for="title" class="form-label" >Process</label>

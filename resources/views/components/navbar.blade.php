@@ -2,7 +2,7 @@
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="{{ route('recipe.create') }}">Recipe</a></li>
-      <li><a href="#">Pricing</a></li>
+      <li><a href="{{ route('recipe.index') }}">Recipes</a></li>
     </ul>
 
     @auth
