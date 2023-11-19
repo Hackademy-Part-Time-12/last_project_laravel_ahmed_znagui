@@ -1,14 +1,14 @@
 /** navbar */
 nav{
-  width: 5%;
-  border-radius: 0px 29px 29px 0px;
+  width: 7%;
   height: 100vh; 
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  background: rgb(175, 175, 175);
+  background: rgb(246, 253, 255);
   font-size:15px;
   position: fixed;
+  font-family: 'Bodoni Moda', serif;
 }
 
 

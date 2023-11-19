@@ -9,9 +9,9 @@
 
     
 
-    <ul class="ul-2 d-flex flex-column">
-      {{ Auth::user()->name }}
-      <li><a href="#">Profile</a></li>
+    <ul class="d-flex flex-column">
+    
+      <li><a href="#">{{ Auth::user()->name }}</a></li>
       <li><a href="#" id="btn">Logout</a>
       <form action="{{ route('logout')}}"  method="POST" id="form-logout"  >
         @csrf

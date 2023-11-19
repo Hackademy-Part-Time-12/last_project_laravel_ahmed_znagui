@@ -1,0 +1,34 @@
+/** homepage and layout */
+
+body{
+    
+    margin: 0;
+    background-color: rgb(242, 234, 219);
+}
+.cont-recipe{
+    background-image:url(/public/media/recipe.avif) ;
+    background-size: cover;
+    height: 450px;
+}
+
+
+
+.text-custom{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 140px;
+    float: right;
+    color: rgb(0, 0, 0);
+    
+}
+.btn{
+    font-family: 'Bodoni Moda', serif;
+    background: #eecccc;
+    border-radius: 0;
+    width: 200px;
+    border: none;
+}
+
+.btn:hover{
+    background: #b79595;
+    color: azure;
+}
